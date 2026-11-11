@@ -67,3 +67,35 @@ footer{padding:32px 0 44px;border-top:1px solid var(--line);color:#8fa2b6;font-s
 @media(max-width:920px){.bl-tour-layout{grid-template-columns:1fr;max-width:730px;margin:auto;gap:28px}.bl-tour-copy{max-width:660px;margin:auto;width:100%}.bl-tour-copy h3{font-size:30px}.bl-tour-features{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.bl-tour-feature{grid-template-columns:1fr;gap:9px}}
 @media(max-width:600px){.bl-tour-heading{margin-bottom:27px}.bl-tour-heading>p{font-size:16px}.bl-laptop{padding:0 2.5%}.bl-laptop-lid{border-radius:12px 12px 2px 2px}.bl-laptop-base{height:12px}.bl-tour-copy>p{font-size:16px}.bl-tour-features{grid-template-columns:1fr}.bl-tour-feature{grid-template-columns:42px 1fr;gap:11px}.bl-tour-feature-symbol{width:42px;height:42px}.bl-tour-controls{margin-top:18px}.bl-tour-disclaimer{text-align:left}}
 @media(prefers-reduced-motion:reduce){.bl-laptop-screen img,.bl-tour-dot,.bl-tour-arrow{transition:none}}
+
+/* AI spotlight: focused on the product's natural-language analysis experience */
+.bl-ai-section{background:radial-gradient(circle at 90% 8%,rgba(44,129,239,.18),transparent 37%),linear-gradient(145deg,#0a192c 0%,#0e2843 100%);color:#f4faff}
+.bl-ai-topline{display:flex;align-items:center;gap:10px;letter-spacing:.13em;font-size:12px;color:#80d9fc;font-weight:800;margin-bottom:21px}
+.bl-ai-spark{display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:linear-gradient(135deg,#2e78f0,#11bed9);color:#fff;font-size:23px}
+.bl-ai-lead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);align-items:center;gap:clamp(24px,4vw,58px)}
+.bl-ai-lead h2{font-size:clamp(36px,4.6vw,57px);max-width:650px;line-height:1.06}
+.bl-ai-lead p{font-size:19px;line-height:1.65;color:#bad0e2;max-width:620px;margin:0 0 26px}
+.bl-ai-tour-link{gap:10px}
+.bl-ai-preview{border:1px solid rgba(129,171,213,.27);border-radius:18px;background:#091526;padding:12px;box-shadow:0 28px 60px rgba(0,0,0,.26);overflow:hidden}
+.bl-ai-preview-top{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:#c8e8fb;padding:6px 9px 13px}
+.bl-ai-status-dot{width:8px;height:8px;border-radius:50%;background:#43d4c3}
+.bl-ai-demo-label{margin-left:auto;color:#8fa8bf;font-size:11px;font-weight:500}
+.bl-ai-preview a{display:block;overflow:hidden;border-radius:9px}
+.bl-ai-preview img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top center;transition:transform .25s ease}
+.bl-ai-preview a:hover img{transform:scale(1.015)}
+.bl-ai-preview-footer{padding:11px 6px 2px;text-align:right;color:#92a9bf;font-size:11px}
+.bl-ai-prompt-head{margin:56px 0 21px}
+.bl-ai-prompt-head h3{font-size:clamp(25px,3vw,32px);margin:0 0 6px}
+.bl-ai-prompt-head p{margin:0;color:#a9bbcf;font-size:15px}
+.bl-ai-prompts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.bl-ai-prompt{border:1px solid rgba(130,170,210,.22);border-radius:18px;background:rgba(255,255,255,.045);padding:22px}
+.bl-ai-prompt-icon{height:39px;width:39px;display:grid;place-items:center;border-radius:12px;background:rgba(46,133,242,.17);color:#71d9ff;margin-bottom:18px;font-size:23px}
+.bl-ai-prompt>span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#83d9ff;font-weight:700}
+.bl-ai-prompt p{font-size:18px;color:#f2faff;line-height:1.5;margin:10px 0 0}
+.bl-ai-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:29px;padding-top:23px;border-top:1px solid rgba(255,255,255,.14)}
+.bl-ai-principles strong{display:block;font-size:16px;margin-bottom:5px}
+.bl-ai-principles span{display:block;font-size:14px;color:#a9bdd0;line-height:1.55}
+.bl-ai-caveat{margin:22px 0 0;color:#90a8bd;font-size:12px;line-height:1.6}
+.bl-tour-dots{flex-wrap:wrap;max-width:270px;justify-content:center}
+@media(max-width:900px){.bl-ai-lead{grid-template-columns:1fr}.bl-ai-preview{max-width:710px}.bl-ai-prompts{grid-template-columns:1fr 1fr}.bl-ai-principles{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.bl-ai-prompts,.bl-ai-principles{grid-template-columns:1fr}.bl-ai-lead p{font-size:17px}.bl-ai-prompt-head{margin-top:39px}.bl-ai-prompt{padding:19px}.bl-ai-prompt p{font-size:16px}.bl-ai-preview-top{flex-wrap:wrap}.bl-tour-dots{gap:9px}}
