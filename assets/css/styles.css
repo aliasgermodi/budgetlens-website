@@ -1,0 +1,32 @@
+:root {
+  --ink:#081522; --ink-2:#0e2238; --ink-3:#173a5d;
+  --blue:#2f7df6; --cyan:#68e8ff; --violet:#5367f5;
+  --white:#f7fbff; --muted:#aebed0; --line:rgba(255,255,255,.11);
+  --paper:#f5f8fc; --paper-ink:#0c2035; --paper-muted:#607286;
+  --radius:24px; --max:1180px;
+  --font:Arial,"Helvetica Neue",sans-serif;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:var(--font);font-size:18px;line-height:1.65;background:var(--ink);color:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(8,21,34,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px} .navlogo{width:270px;max-width:45vw;display:block}
+.navlinks{display:flex;align-items:center;gap:24px;font-size:15px;color:#cbd8e6} .navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;border:1px solid transparent;transition:.2s}
+.btn.primary{background:linear-gradient(135deg,var(--cyan),var(--blue));color:#061626;box-shadow:0 16px 42px rgba(47,125,246,.24)} .btn.ghost{border-color:var(--line);background:rgba(255,255,255,.04)}
+.hero{position:relative;overflow:hidden;padding:90px 0 84px;background:radial-gradient(circle at 78% 18%,rgba(47,125,246,.22),transparent 34%),radial-gradient(circle at 18% 8%,rgba(104,232,255,.08),transparent 26%),linear-gradient(180deg,#07131f,#0a1b2d)}
+.hero:after{content:"";position:absolute;inset:auto -12% -35% 40%;height:500px;background:radial-gradient(circle,rgba(47,125,246,.15),transparent 65%);filter:blur(20px)}
+.heroGrid{position:relative;z-index:1;display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center} .eyebrow{display:inline-block;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#8edfff;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(52px,7vw,82px);line-height:1.02;letter-spacing:-.045em;margin:0 0 22px;font-weight:600} .lead{font-size:22px;line-height:1.55;color:#c1cfdd;max-width:760px;margin:0 0 30px}
+.heroBtns{display:flex;gap:14px;flex-wrap:wrap} .heroLogoCard{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:30px;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.32)} .heroLogoCard img{width:100%;border-radius:19px;display:block}
+.trustRow{margin-top:34px;display:flex;gap:24px;flex-wrap:wrap;color:#9eb0c4;font-size:15px} .trustRow span:before{content:"•";color:var(--cyan);margin-right:9px}
+section{padding:88px 0} section.light{background:var(--paper);color:var(--paper-ink)} .sectionHead{max-width:860px;margin-bottom:42px} .kicker{font-size:14px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#3d8cf6;margin-bottom:12px} h2{font-size:clamp(38px,5vw,56px);line-height:1.08;letter-spacing:-.035em;margin:0 0 16px;font-weight:600} .sectionHead p{font-size:20px;line-height:1.58;margin:0;color:var(--muted)} .light .sectionHead p{color:var(--paper-muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px} .card{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:var(--radius);padding:28px} .light .card{background:white;border-color:#dce5ef;box-shadow:0 12px 32px rgba(33,55,82,.06)}
+.card h3{font-size:24px;line-height:1.2;margin:0 0 12px;font-weight:650} .card p{font-size:17px;line-height:1.65;color:#adbdcd;margin:0} .light .card p{color:#647588} .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#193d66,#2f7df6);margin-bottom:20px;font-weight:800;color:#aef4ff;font-size:18px}
+.arch{display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;gap:18px} .plane{min-height:300px;padding:30px;border-radius:26px;border:1px solid #dce5ef;background:white;box-shadow:0 16px 38px rgba(31,53,78,.06)} .plane.dark{background:#0c1d30;border-color:#183652;color:white} .plane h3{font-size:28px;margin:0 0 10px} .plane ul{margin:22px 0 0;padding:0;list-style:none} .plane li{padding:9px 0;font-size:17px;border-bottom:1px solid rgba(105,130,155,.15)} .arrow{text-align:center;font-size:38px;color:#2f7df6}
+.aiPanel{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:stretch} .quoteBox{border-radius:28px;padding:34px;background:linear-gradient(145deg,#102a46,#0a1828);border:1px solid #234b74} .quoteBox .q{font-size:26px;line-height:1.4;font-weight:550;margin-bottom:24px} .small{font-size:16px;color:#9cb0c4}
+.metricGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px} .metric{padding:22px;border-radius:20px;background:white;border:1px solid #dce5ef} .metric strong{display:block;font-size:31px;letter-spacing:-.03em;color:#0a2846} .metric span{display:block;font-size:15px;color:#66798d;margin-top:6px}
+.valueStrip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:var(--line)} .valueStrip>div{background:#0b1d30;padding:28px 24px;min-height:180px} .valueStrip strong{font-size:20px;display:block;margin-bottom:10px} .valueStrip p{font-size:16px;line-height:1.55;color:#aebed0;margin:0}
+.cta{background:linear-gradient(135deg,#102f51,#0b1c2e 55%,#0b223b);border:1px solid #234b74;border-radius:30px;padding:46px;display:flex;align-items:center;justify-content:space-between;gap:32px} .cta h2{font-size:42px;margin:0 0 10px} .cta p{font-size:18px;color:#b5c6d7;margin:0;max-width:720px}
+footer{padding:32px 0 44px;border-top:1px solid var(--line);color:#8fa2b6;font-size:14px} .foot{display:flex;justify-content:space-between;gap:20px;align-items:center} .foot img{width:230px}
+@media(max-width:900px){body{font-size:17px} .navlinks a:not(.btn){display:none} .heroGrid,.grid3,.grid2,.aiPanel{grid-template-columns:1fr} .arch{grid-template-columns:1fr} .arrow{transform:rotate(90deg)} .valueStrip{grid-template-columns:1fr 1fr} .cta{display:block} .cta .btn{margin-top:22px} h1{font-size:52px} h2{font-size:40px}}
+@media(max-width:560px){.wrap{width:min(100% - 26px,var(--max))} .navlogo{width:210px} .hero{padding-top:64px} .lead{font-size:19px} section{padding:68px 0} .valueStrip{grid-template-columns:1fr} .metricGrid{grid-template-columns:1fr} .cta{padding:28px}}
